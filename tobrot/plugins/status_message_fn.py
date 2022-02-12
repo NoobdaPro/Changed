@@ -88,11 +88,11 @@ async def status_message_f(
                 msg += f"<b>✥══ @StarterLeech ══✥</b>\n"
                 msg += f"\n<b>{downloading_dir_name}</b>"
                 msg += f"\n<b>{prog}</b>"
-                msg += f"\n<b>¤Speed</b>: {file.download_speed_string()}"
-                msg += f"\n<b>¤Status</b>: {file.progress_string()} <b>of</b> {file.total_length_string()}"
-                msg += f"\n<b>¤ETA:</b> {file.eta_string()}"
+                msg += f"\n<b>➥Speed🚀</b>: {file.download_speed_string()}"
+                msg += f"\n<b>➥Status✓</b>: {file.progress_string()} <b>of</b> {file.total_length_string()}"
+                msg += f"\n<b>➥ETA⏳:</b> {file.eta_string()}"
                 msg += f"\n{msgg}"
-                msg += f"\n<b>🗑GID:</b> <code> {file.gid}</code>"
+                msg += f"\n<b>🗑GID:</b> <code>{file.gid}</code>"
                 msg += "\n"
 
         hr, mi, se = up_time(time.time() - BOT_START_TIME)
