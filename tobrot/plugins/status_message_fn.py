@@ -92,11 +92,9 @@ async def status_message_f(
                 msg += f"\n<b>➥Status✓</b>: {file.progress_string()} <b>of</b> {file.total_length_string()}"
                 msg += f"\n<b>➥ETA⏳:</b> {file.eta_string()}"
                 msg += f"\n{msgg}"
-                msg += f"\n<b>🗑GID:</b> <code>{file.gid}</code>"
-                
-                msg += f"<b>✥══ @StarterLeech ══✥</b>\n"
+                msg += f"\n<b>🗑GID:</b> <code>{file.gid}</code>"    
                 msg += "\n"
-
+                msg += f"<b>✥══ @StarterLeech ══✥</b>\n"
         hr, mi, se = up_time(time.time() - BOT_START_TIME)
         total, used, free = shutil.disk_usage(".")
         ram = psutil.virtual_memory().percent
@@ -104,7 +102,7 @@ async def status_message_f(
         total = humanbytes(total)
         used = humanbytes(used)
         free = humanbytes(free)
-        msg += f"<b>✥══ @StarterLeech ══✥</b>\n"
+        
         ms_g = (
             f"<b>Bot Uptime</b>: <code>{hr} : {mi} : {se}</code>\n"
             f"<b>T:</b> <code>{total}</code> <b>U:</b> <code>{used}</code> <b>F:</b> <code>{free}</code>\n"
