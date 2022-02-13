@@ -91,7 +91,7 @@ async def status_message_f(
                 msg += f"\n<b>➥Speed🚀</b>: {file.download_speed_string()}"
                 msg += f"\n<b>➥Status✓</b>: {file.progress_string()} <b>of</b> {file.total_length_string()}"
                 msg += f"\n<b>➥ETA⏳:</b> {file.eta_string()}"
-                msg += f"\n<b>👨‍🦰Added By:</b> <code>{tg://user?id={user_id}}</code>
+                msg += f"\n<b>👨‍🦰Added By:</b> <code>{tg://user?id={user_id}}</code>"
                 msg += f"\n{msgg}"
                 msg += f"\n<b>🗑GID:</b> <code>{file.gid}</code>"    
                 msg += "\n"
