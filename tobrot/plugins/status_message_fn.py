@@ -93,6 +93,7 @@ async def status_message_f(
                 msg += f"\n<b>➥ETA⏳:</b> {file.eta_string()}"
                 msg += f"\n{msgg}"
                 msg += f"\n<b>🗑GID:</b> <code>{file.gid}</code>"
+                
                 msg += f"<b>✥══ @StarterLeech ══✥</b>\n"
                 msg += "\n"
 
