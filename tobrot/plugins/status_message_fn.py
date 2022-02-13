@@ -104,7 +104,7 @@ async def status_message_f(
         total = humanbytes(total)
         used = humanbytes(used)
         free = humanbytes(free)
-
+        msg += f"<b>✥══ @StarterLeech ══✥</b>\n"
         ms_g = (
             f"<b>Bot Uptime</b>: <code>{hr} : {mi} : {se}</code>\n"
             f"<b>T:</b> <code>{total}</code> <b>U:</b> <code>{used}</code> <b>F:</b> <code>{free}</code>\n"
