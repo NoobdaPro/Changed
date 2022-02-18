@@ -92,10 +92,9 @@ async def status_message_f(
                 msg += f"\n<b>➥Status✓</b>: {file.progress_string()} <b>of</b> {file.total_length_string()}"
                 msg += f"\n<b>➥ETA⏳:</b> {file.eta_string()}"
                 msg += f"\n➥{msgg}"
-                msg += f"\n<b>○ Adder :</b> <i>{download.message.from_user.first_name}</i>"
                 msg += f"\n<b>🗑GID:</b> <code>{file.gid}</code>"    
                 msg += "\n"
-                
+                msg += f"\n<b>○ Adder :</b> <i>{download.message.from_user.first_name}</i>"
                 msg += f"<b>✥══ @StarterLeech ══✥</b>\n"
         hr, mi, se = up_time(time.time() - BOT_START_TIME)
         total, used, free = shutil.disk_usage(".")
